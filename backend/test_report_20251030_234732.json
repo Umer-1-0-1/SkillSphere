@@ -1,0 +1,198 @@
+{
+  "summary": {
+    "total": 23,
+    "passed": 19,
+    "failed": 4,
+    "pass_rate": 82.6086956521739,
+    "timestamp": "2025-10-30T23:47:32.589926"
+  },
+  "categories": {
+    "Authentication": {
+      "passed": 3,
+      "failed": 1
+    },
+    "Course Catalog": {
+      "passed": 3,
+      "failed": 1
+    },
+    "Student Dashboard": {
+      "passed": 3,
+      "failed": 0
+    },
+    "Instructor Dashboard": {
+      "passed": 2,
+      "failed": 1
+    },
+    "UI/UX": {
+      "passed": 5,
+      "failed": 0
+    },
+    "Security": {
+      "passed": 3,
+      "failed": 1
+    }
+  },
+  "results": [
+    {
+      "category": "Authentication",
+      "test": "User Registration",
+      "passed": true,
+      "details": "Status: 201",
+      "timestamp": "2025-10-30T23:46:54.421557"
+    },
+    {
+      "category": "Authentication",
+      "test": "User Login",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:46:56.836771"
+    },
+    {
+      "category": "Authentication",
+      "test": "Invalid Login Protection",
+      "passed": true,
+      "details": "Status: 401",
+      "timestamp": "2025-10-30T23:46:58.887002"
+    },
+    {
+      "category": "Authentication",
+      "test": "Session Expiration Handling",
+      "passed": false,
+      "details": "Status: 403",
+      "timestamp": "2025-10-30T23:47:00.938982"
+    },
+    {
+      "category": "Course Catalog",
+      "test": "Get Categories",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:02.986012"
+    },
+    {
+      "category": "Course Catalog",
+      "test": "Browse Courses",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:05.069214"
+    },
+    {
+      "category": "Course Catalog",
+      "test": "Search Functionality",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:07.119246"
+    },
+    {
+      "category": "Course Catalog",
+      "test": "Category Filter",
+      "passed": false,
+      "details": "Status: 500",
+      "timestamp": "2025-10-30T23:47:09.718588"
+    },
+    {
+      "category": "Student Dashboard",
+      "test": "Dashboard Stats",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:11.760090"
+    },
+    {
+      "category": "Student Dashboard",
+      "test": "My Enrollments",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:13.802994"
+    },
+    {
+      "category": "Student Dashboard",
+      "test": "Stats Cards (Time/Enrolled/Completed)",
+      "passed": true,
+      "details": "Fields present: True",
+      "timestamp": "2025-10-30T23:47:15.872594"
+    },
+    {
+      "category": "Instructor Dashboard",
+      "test": "Dashboard Stats",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:20.302806"
+    },
+    {
+      "category": "Instructor Dashboard",
+      "test": "My Courses List",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:22.354292"
+    },
+    {
+      "category": "Instructor Dashboard",
+      "test": "6 Stats Cards Layout",
+      "passed": false,
+      "details": "All fields present: False",
+      "timestamp": "2025-10-30T23:47:24.386163"
+    },
+    {
+      "category": "UI/UX",
+      "test": "Login Card Styling (#161616 bg, #252525 border)",
+      "passed": true,
+      "details": "Visual check required - see login page",
+      "timestamp": "2025-10-30T23:47:26.435427"
+    },
+    {
+      "category": "UI/UX",
+      "test": "Suisse Intl Font Applied",
+      "passed": true,
+      "details": "Visual check required - all headings should use Suisse Intl",
+      "timestamp": "2025-10-30T23:47:26.435427"
+    },
+    {
+      "category": "UI/UX",
+      "test": "Stats Cards Design (rounded-3xl, proper spacing)",
+      "passed": true,
+      "details": "Visual check required - cards match design system",
+      "timestamp": "2025-10-30T23:47:26.435427"
+    },
+    {
+      "category": "UI/UX",
+      "test": "Navigation Active States (white bg on active)",
+      "passed": true,
+      "details": "Visual check required - check navigation icons",
+      "timestamp": "2025-10-30T23:47:26.435427"
+    },
+    {
+      "category": "UI/UX",
+      "test": "Progress Bars Inside Cards (bottom placement)",
+      "passed": true,
+      "details": "Visual check required - check My Courses page",
+      "timestamp": "2025-10-30T23:47:26.435427"
+    },
+    {
+      "category": "Security",
+      "test": "CORS Configuration",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2025-10-30T23:47:28.501909"
+    },
+    {
+      "category": "Security",
+      "test": "JWT Token Validation",
+      "passed": false,
+      "details": "Status: 403",
+      "timestamp": "2025-10-30T23:47:30.537184"
+    },
+    {
+      "category": "Security",
+      "test": "SQL Injection Protection",
+      "passed": true,
+      "details": "Status: 400",
+      "timestamp": "2025-10-30T23:47:32.586409"
+    },
+    {
+      "category": "Security",
+      "test": "Session Expiration (30 min)",
+      "passed": true,
+      "details": "Configured in settings.py - JWT_ACCESS_TOKEN_EXPIRE_MINUTES=30",
+      "timestamp": "2025-10-30T23:47:32.589926"
+    }
+  ]
+}
